@@ -38,9 +38,13 @@ Requires: php_curl
 
 ##Usage
 
-Routable via: web://<project>/firebase/<action>/[<firebase_object>]
+Routable via:
 
-Omitting <action> default to GET
+```html
+http://<project>/firebase/<action>/[<firebase_object>]
+```
+
+Omitting "<action>" defaults to GET
 
 Actions are: [set, get, push, update, delete]
 
