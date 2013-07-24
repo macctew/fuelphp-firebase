@@ -55,7 +55,7 @@ $firebase = Request::forge('firebase/<action>/[<firebase_object>]/')->execute(
     array(
         array(
             'tree' => 'apple',
-            'hello' => 'world
+            'hello' => 'world'
         ),
     ))->response();
 ```
