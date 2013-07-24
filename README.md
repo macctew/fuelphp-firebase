@@ -44,7 +44,7 @@ Routable via:
 http://<project>/firebase/<action>/[<firebase_object>]
 ```
 
-Omitting "<action>" defaults to GET
+Omitting "action" defaults to GET
 
 Actions are: [set, get, push, update, delete]
 
