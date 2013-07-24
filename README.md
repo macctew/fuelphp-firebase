@@ -3,9 +3,9 @@ fuelphp-firebase
 
 A Firebase client module for FuelPHP
 
-Based on the work of @ktamas77 with firebase-php
+Based on the work of [firebase-php](https://github.com/ktamas77/firebase-php) by @ktamas77
 
-#[firebase-php](https://github.com/ktamas77/firebase-php)
+##[firebase-php](https://github.com/ktamas77/firebase-php)
 
 Based on Firebase REST API: https://www.firebase.com/docs/rest-api.html
 
@@ -13,7 +13,7 @@ Base library: @ktamas77
 Token auth: @craigrusso
 Update & Push method: @mintao
 
-#FuelPHP
+##FuelPHP
 
 * [Website](http://fuelphp.com/)
 * [Release Documentation](http://docs.fuelphp.com)
@@ -22,11 +22,11 @@ Update & Push method: @mintao
 * [Development branch API browser](http://dev-api.fuelphp.com)
 * [Support Forum](http://fuelphp.com/forums) for comments, discussion and community support
 
-## Description
+### Description
 
 FuelPHP is a fast, lightweight PHP 5.3 framework. In an age where frameworks are a dime a dozen, We believe that FuelPHP will stand out in the crowd.  It will do this by combining all the things you love about the great frameworks out there, while getting rid of the bad.
 
-#Installation
+##Installation
 
 Copy to /app/modules/
 
@@ -36,9 +36,9 @@ Edit /firebase/config/firebase.php and add your firebaseio.com base url
 
 Requires: php_curl
 
-#Usage
+##Usage
 
-Routable via: http://<project>/firebase/<action>/[<firebase_object>]
+Routable via: web://<project>/firebase/<action>/[<firebase_object>]
 
 Omitting <action> default to GET
 
@@ -47,7 +47,7 @@ Actions are: [set, get, push, update, delete]
 Via HMVC:
 
 ```php
-$firebase = Request::forge('firebase/<action>/[<firebase_object>]/")->execute(
+$firebase = Request::forge('firebase/<action>/[<firebase_object>]/')->execute(
     array(
         array(
             'tree' => 'apple',
